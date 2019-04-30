@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CardChoices from "./components/CardChoices";
+import Wrapper from "./components/Wrapper";
+import friends from "./choices.json";
+import Header from "./components/Header";
+import Jumbotron from "./components/Jumbotron";
+import "./App.css";
 
-function App() {
+class App extends React.Component {
+  state= {
+    friends: friends,
+  };
+
+  handleRemove = id => {
+    const filteredFriends = this.state.friends.filter(f=>  f.id !== id);
+    this.setState({friends: filteredFriends});
+  };
+
+render() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Wrapper>
+      <Header></Header>
+      <Jumbotron></Jumbotron>
+      
+      {this.state.friends.map(f => (
+        <CardChoices
+          image={f.image}
+          handleClick={()=> this.handleRemove(f.id)}
+        />
+      ))}
+    </Wrapper>
   );
+  }
 }
 
 export default App;

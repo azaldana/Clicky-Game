@@ -1,0 +1,11 @@
+.container-navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    /* width: 100%; */
+    background-color: transparent;
+    border-bottom: 2px solid lightblue;
+}

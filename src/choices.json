@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Barnacle Boy",
+        "image": "./images/barnacle-boy.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Gary the Snail",
+        "image": "./images/gary.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Larry the Lobster",
+        "image": "./images/larry.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Mermaid Man",
+        "image": "./images/mermaid-man.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Mr. Krabs",
+        "image": "./images/mr-krabs.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Mrs. Puff",
+        "image": "./images/mrs-puff.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Patrick Star",
+        "image": "./images/patrick.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Pearl",
+        "image": "./images/pearl.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Plankton",
+        "image": "./images/plankton.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Sandy",
+        "image": "./images/sandy.jpg"
+    },
+    {
+        "id": 11,
+        "name": "Spongebob",
+        "image": "./images/spongebob.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Squidward",
+        "image": "./images/squidward.jpg"
+    }
+]
