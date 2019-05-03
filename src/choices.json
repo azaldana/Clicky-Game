@@ -1,62 +1,74 @@
 [
     {
         "id": 1,
-        "name": "Barnacle Boy",
-        "image": "./images/barnacle-boy.jpg"
+        "name": "Andy",
+        "image": "./images/andy.jpg",
+        "clicked": false
     },
     {
         "id": 2,
-        "name": "Gary the Snail",
-        "image": "./images/gary.jpg"
+        "name": "Angela",
+        "image": "./images/angela.jpg",
+        "clicked": false
     },
     {
         "id": 3,
-        "name": "Larry the Lobster",
-        "image": "./images/larry.jpg"
+        "name": "Dwight",
+        "image": "./images/dwight.jpg",
+        "clicked": false
     },
     {
         "id": 4,
-        "name": "Mermaid Man",
-        "image": "./images/mermaid-man.jpg"
+        "name": "Michael",
+        "image": "./images/michael.jpg",
+        "clicked": false
     },
     {
         "id": 5,
-        "name": "Mr. Krabs",
-        "image": "./images/mr-krabs.jpg"
+        "name": "Jim",
+        "image": "./images/jim.jpg",
+        "clicked": false
     },
     {
         "id": 6,
-        "name": "Mrs. Puff",
-        "image": "./images/mrs-puff.jpg"
+        "name": "Phyllis",
+        "image": "./images/phyllis.jpg",
+        "clicked": false
     },
     {
         "id": 7,
-        "name": "Patrick Star",
-        "image": "./images/patrick.jpg"
+        "name": "Oscar",
+        "image": "./images/oscar.jpg",
+        "clicked": false
     },
     {
         "id": 8,
-        "name": "Pearl",
-        "image": "./images/pearl.jpg"
+        "name": "Pam",
+        "image": "./images/pam.jpg",
+        "clicked": false
     },
     {
         "id": 9,
-        "name": "Plankton",
-        "image": "./images/plankton.jpg"
+        "name": "Kelly",
+        "image": "./images/kelly.jpg",
+        "clicked": false
     },
     {
         "id": 10,
-        "name": "Sandy",
-        "image": "./images/sandy.jpg"
+        "name": "Kevin",
+        "image": "./images/kevin.jpg",
+        "clicked": false
     },
     {
         "id": 11,
-        "name": "Spongebob",
-        "image": "./images/spongebob.jpg"
+        "name": "Stanley",
+        "image": "./images/stanley.jpg",
+        "clicked": false
     },
     {
         "id": 12,
-        "name": "Squidward",
-        "image": "./images/squidward.jpg"
+        "name": "Ryan",
+        "image": "./images/ryan.jpg",
+        "clicked": false
     }
 ]

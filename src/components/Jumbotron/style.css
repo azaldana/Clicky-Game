@@ -1,12 +1,15 @@
 .jumbotron {
     background-color: transparent;
-    width: 100%;
-    height: 300px;
+    width: 75%;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 
 .container-jumbo {
     width: 90%;
     margin: 0;
+    float: left;
 }
 
 .container-text {
@@ -16,6 +19,17 @@
 
 .container-text .display-4 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#jumbo-logo {
+    width: 350px;
+    margin-top: -110px;
+    margin-bottom: 25px;
+}
+
+#test {
     font-weight: bold;
     text-transform: uppercase;
 }
