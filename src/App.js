@@ -39,17 +39,16 @@ class App extends Component {
     this.setState({
       currentScore: newScore
     })
-
     if (newScore >= this.state.topScore) {
       this.setState({
         topScore: newScore
       })
 
-    } else if (newScore === 12) {
+    } if (newScore === 12) {
       alert("You Win!");
     }
     this.handleShuffle();
-  };
+  }
 
   handleReset = () => {
     this.setState({
