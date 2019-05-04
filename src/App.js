@@ -33,11 +33,18 @@ class App extends Component {
         currentScore: 0,
         topScore: this.state.topScore,
         clicked: []
-      })
-      alert("You Lost. Play Again?")
+      });
+      alert("You Lost. Play Again?");
       this.handleShuffle();
-    } 
+    }
   };
+
+  handleShuffle = () => {
+    let shuffledFriends = shuffleFriends(friends);
+    this.setState({
+      friends: shuffledFriends
+    });
+  }
 
   handleIncrement = () => {
     const newScore = this.state.currentScore + 1;
@@ -50,31 +57,13 @@ class App extends Component {
       })
 
     } if (newScore === 12) {
+      alert("You Win!");
       this.setState({
         currentScore: 0,
-        topScore: this.state.topScore,
         clicked: []
       })
-      alert("You Win!");
     }
     this.handleShuffle();
-  }
-
-  // handleReset = () => {
-  //   this.setState({
-  //     currentScore: 0,
-  //     topScore: this.state.topScore,
-  //     clicked: []
-  //   });
-  //   alert("You Lost. Play Again?");
-  //   this.handleShuffle();
-  // }
-
-  handleShuffle = () => {
-    let shuffledFriends = shuffleFriends(friends);
-    this.setState({
-      friends: shuffledFriends
-    });
   }
 
   render() {
