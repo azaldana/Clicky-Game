@@ -24,10 +24,13 @@ class App extends Component {
 
   handleClick = id => {
     if (this.state.clicked.indexOf(id) === -1) {
-      this.handleIncrement();
-      this.setState({
-        clicked: this.state.clicked.concat(id)
-      });
+      let continueGame = this.handleIncrement();
+      if (continueGame){
+        this.setState({
+          clicked: this.state.clicked.concat(id)
+        });
+      }
+    
     } else {
       this.setState({
         currentScore: 0,
@@ -39,14 +42,8 @@ class App extends Component {
     }
   };
 
-  handleShuffle = () => {
-    let shuffledFriends = shuffleFriends(friends);
-    this.setState({
-      friends: shuffledFriends
-    });
-  }
-
   handleIncrement = () => {
+    let continueGame = true;
     const newScore = this.state.currentScore + 1;
     this.setState({
       currentScore: newScore
@@ -55,18 +52,27 @@ class App extends Component {
       this.setState({
         topScore: newScore
       })
-
     } if (newScore === 12) {
       alert("You Win!");
       this.setState({
         currentScore: 0,
         clicked: []
       })
+      continueGame = false;
     }
     this.handleShuffle();
+    return continueGame;
+  }
+
+  handleShuffle = () => {
+    let shuffledFriends = shuffleFriends(friends);
+    this.setState({
+      friends: shuffledFriends
+    });
   }
 
   render() {
+    console.log("This is the state", this.state);
     return (
       <Wrapper>
         <Header
@@ -82,7 +88,6 @@ class App extends Component {
                 image={friend.image}
                 handleClick={this.handleClick}
                 handleIncrement={this.handleIncrement}
-                handleReset={this.handleReset}
                 handleShuffle={this.handleShuffle}
               />
             ))}
