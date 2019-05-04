@@ -2,7 +2,7 @@
 
 The Office Memory Game is a web application that utilizes React.js to create a full stack memory game application. 
 
-[The Office Memory Game](https://pacific-gorge-89960.herokuapp.com/ "The Office Memory Game")
+[The Office Memory Game](https://dry-chamber-59503.herokuapp.com/ "The Office Memory Game")
 
 ## Description
 
