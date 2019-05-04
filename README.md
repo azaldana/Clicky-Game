@@ -11,7 +11,6 @@ The Office Memory Game is a web application that utilizes React.js to create a f
 ## Sample View
 
 ![The Office Memory Game Screenshot](/public/images/screenshot-01.jpg)
-![The Office Memory Game Screenshot](/public/images/screenshot-02.jpg)
 
 ## Technology
 
