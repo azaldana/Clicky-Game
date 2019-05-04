@@ -19,7 +19,6 @@ class App extends Component {
     friends,
     currentScore: 0,
     topScore: 0,
-    rightWrong: "",
     clicked: []
   };
 
@@ -30,8 +29,14 @@ class App extends Component {
         clicked: this.state.clicked.concat(id)
       });
     } else {
-      this.handleReset();
-    }
+      this.setState({
+        currentScore: 0,
+        topScore: this.state.topScore,
+        clicked: []
+      })
+      alert("You Lost. Play Again?")
+      this.handleShuffle();
+    } 
   };
 
   handleIncrement = () => {
@@ -45,20 +50,25 @@ class App extends Component {
       })
 
     } if (newScore === 12) {
+      this.setState({
+        currentScore: 0,
+        topScore: this.state.topScore,
+        clicked: []
+      })
       alert("You Win!");
     }
     this.handleShuffle();
   }
 
-  handleReset = () => {
-    this.setState({
-      currentScore: 0,
-      topScore: this.state.topScore,
-      clicked: []
-    });
-    alert("You Lost. Play Again?");
-    this.handleShuffle();
-  }
+  // handleReset = () => {
+  //   this.setState({
+  //     currentScore: 0,
+  //     topScore: this.state.topScore,
+  //     clicked: []
+  //   });
+  //   alert("You Lost. Play Again?");
+  //   this.handleShuffle();
+  // }
 
   handleShuffle = () => {
     let shuffledFriends = shuffleFriends(friends);
@@ -73,7 +83,6 @@ class App extends Component {
         <Header
           score={this.state.currentScore}
           topScore={this.state.topScore}
-          rightWrong={this.state.rightWrong}
         />
         <Jumbotron></Jumbotron>
         <div className="container cards">
